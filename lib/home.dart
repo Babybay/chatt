@@ -21,13 +21,7 @@ class HomePage extends StatelessWidget {
             onPressed: () => logoutUser(context),
           ),
         ],
-      ),
-      body: Center(
-        child: Text(
-          "Welcome, ${FirebaseAuth.instance.currentUser?.email ?? "User"}",
-          style: const TextStyle(fontSize: 20),
-        ),
-      ),
+      ), 
     );
   }
 }
